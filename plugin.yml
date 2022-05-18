@@ -1,0 +1,11 @@
+name: CPlotClaimAddon
+main: ColinHDev\CPlotClaimAddon\CPlotClaimAddon
+version: "1.0.0"
+description: "CPlot addon for performing certain actions once a plot is claimed"
+
+api: 4.0.0
+depend:
+- CPlot
+
+author: ColinHDev
+website: https://github.com/ColinHDev
