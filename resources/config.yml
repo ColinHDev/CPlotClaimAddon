@@ -1,0 +1,23 @@
+# Define the default biome for a claimed plot's biome.
+biome.fallback: "PLAINS"
+# Define a biome for a claimed plot's biome for a specific world.
+# If a specific value for a world is not defined, the value of "biome.fallback" will be used.
+biome.worlds: {
+  # world name: "BIOME NAME"
+}
+
+# Define the default block for a claimed plot's border.
+borderBlock.fallback: "Cobblestone Slab"
+# Define a block for a claimed plot's border for a specific world.
+# If a specific value for a world is not defined, the value of "borderBlock.fallback" will be used.
+borderBlock.worlds: {
+  # world name: "BLOCK NAME"
+}
+
+# Define the default block for a claimed plot's wall.
+wallBlock.fallback: "Oak Planks"
+# Define a block for a claimed plot's wall for a specific world.
+# If a specific value for a world is not defined, the value of "wallBlock.fallback" will be used.
+wallBlock.worlds: {
+  # world name: "BLOCK NAME"
+}

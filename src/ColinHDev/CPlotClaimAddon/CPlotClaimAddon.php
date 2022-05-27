@@ -13,4 +13,8 @@ class CPlotClaimAddon extends PluginBase {
     public function onLoad() : void {
         self::setInstance($this);
     }
+
+    public function onEnable() : void {
+        ResourceManager::getInstance();
+    }
 }
