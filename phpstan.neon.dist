@@ -1,0 +1,7 @@
+parameters:
+	level: 9
+	paths:
+		- src
+	scanDirectories:
+	    - /vendor/colinhdev/cplot/src
+	    - /vendor/colinhdev/libasyncevent/src
