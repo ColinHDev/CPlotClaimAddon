@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ee71b04dffa61e3328c8cd81e002bcc",
+    "content-hash": "6c5fc9845bd4640accc865c96ddba604",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -126,13 +126,13 @@
             "version": "dev-development",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ColinHDev/CPlot.git",
-                "reference": "706e917236558cc4ad214bcfddce2cccb237799c"
+                "url": "git@github.com:ColinHDev/CPlot.git",
+                "reference": "7bda7b4c72536691d88a05a850cbb7ed87d4970f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ColinHDev/CPlot/zipball/706e917236558cc4ad214bcfddce2cccb237799c",
-                "reference": "706e917236558cc4ad214bcfddce2cccb237799c",
+                "url": "https://api.github.com/repos/ColinHDev/CPlot/zipball/7bda7b4c72536691d88a05a850cbb7ed87d4970f",
+                "reference": "7bda7b4c72536691d88a05a850cbb7ed87d4970f",
                 "shasum": ""
             },
             "require": {
@@ -151,11 +151,7 @@
             },
             "default-branch": true,
             "type": "library",
-            "support": {
-                "source": "https://github.com/ColinHDev/CPlot/tree/development",
-                "issues": "https://github.com/ColinHDev/CPlot/issues"
-            },
-            "time": "2022-05-18T23:02:36+00:00"
+            "time": "2022-05-27T16:24:39+00:00"
         },
         {
             "name": "colinhdev/libasyncevent",
@@ -1253,17 +1249,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SOF3/await-std.git",
-                "reference": "b7af914eaecc0244fc71835eb08f0669b60c997a"
+                "reference": "6abd0dc7c509545eafefd38c30729467c4a647e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SOF3/await-std/zipball/b7af914eaecc0244fc71835eb08f0669b60c997a",
-                "reference": "b7af914eaecc0244fc71835eb08f0669b60c997a",
+                "url": "https://api.github.com/repos/SOF3/await-std/zipball/6abd0dc7c509545eafefd38c30729467c4a647e0",
+                "reference": "6abd0dc7c509545eafefd38c30729467c4a647e0",
                 "shasum": ""
             },
             "require": {
                 "pocketmine/pocketmine-mp": "^4.0.0",
-                "sof3/await-generator": "^3.1.1"
+                "sof3/await-generator": "^3.3.0"
             },
             "require-dev": {
                 "phpstan/phpstan": "^0.12.84"
@@ -1284,7 +1280,7 @@
                 "issues": "https://github.com/SOF3/await-std/issues",
                 "source": "https://github.com/SOF3/await-std/tree/master"
             },
-            "time": "2022-04-12T00:08:28+00:00"
+            "time": "2022-05-27T05:10:08+00:00"
         },
         {
             "name": "sof3/infoapi",
@@ -1328,16 +1324,16 @@
         },
         {
             "name": "sof3/libasynql",
-            "version": "v4.0.1",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/poggit/libasynql.git",
-                "reference": "a7e844e409166601152347f0acfd91608e93eee4"
+                "reference": "a55ecceb73e6aa99b80bbec2a78aed0c6341170c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/poggit/libasynql/zipball/a7e844e409166601152347f0acfd91608e93eee4",
-                "reference": "a7e844e409166601152347f0acfd91608e93eee4",
+                "url": "https://api.github.com/repos/poggit/libasynql/zipball/a55ecceb73e6aa99b80bbec2a78aed0c6341170c",
+                "reference": "a55ecceb73e6aa99b80bbec2a78aed0c6341170c",
                 "shasum": ""
             },
             "require": {
@@ -1361,22 +1357,22 @@
             ],
             "support": {
                 "issues": "https://github.com/poggit/libasynql/issues",
-                "source": "https://github.com/poggit/libasynql/tree/v4.0.1"
+                "source": "https://github.com/poggit/libasynql/tree/4.1.0"
             },
-            "time": "2021-12-17T16:15:41+00:00"
+            "time": "2022-05-25T15:45:58+00:00"
         },
         {
             "name": "sof3/rwlock",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SOF3/rwlock.php.git",
-                "reference": "79c7593810ee830a076a169b173d8e48dc391465"
+                "reference": "7f9b59e488326619e9b24a39620ce747618362b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SOF3/rwlock.php/zipball/79c7593810ee830a076a169b173d8e48dc391465",
-                "reference": "79c7593810ee830a076a169b173d8e48dc391465",
+                "url": "https://api.github.com/repos/SOF3/rwlock.php/zipball/7f9b59e488326619e9b24a39620ce747618362b9",
+                "reference": "7f9b59e488326619e9b24a39620ce747618362b9",
                 "shasum": ""
             },
             "require": {
@@ -1405,9 +1401,9 @@
             "description": "Exclusive and Read-write locks for PHP",
             "support": {
                 "issues": "https://github.com/SOF3/rwlock.php/issues",
-                "source": "https://github.com/SOF3/rwlock.php/tree/0.1.0"
+                "source": "https://github.com/SOF3/rwlock.php/tree/0.1.1"
             },
-            "time": "2021-12-19T05:29:12+00:00"
+            "time": "2022-03-05T13:06:31+00:00"
         },
         {
             "name": "sofe/capital",
@@ -1777,16 +1773,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.6.8",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "d76498c5531232cb8386ceb6004f7e013138d3ba"
+                "reference": "c602f80d66ba425943b0f4aaa27010c822dd8f87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d76498c5531232cb8386ceb6004f7e013138d3ba",
-                "reference": "d76498c5531232cb8386ceb6004f7e013138d3ba",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c602f80d66ba425943b0f4aaa27010c822dd8f87",
+                "reference": "c602f80d66ba425943b0f4aaa27010c822dd8f87",
                 "shasum": ""
             },
             "require": {
@@ -1812,7 +1808,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.6.8"
+                "source": "https://github.com/phpstan/phpstan/tree/1.7.2"
             },
             "funding": [
                 {
@@ -1832,7 +1828,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-10T06:54:21+00:00"
+            "time": "2022-05-26T12:59:20+00:00"
         },
         {
             "name": "phpstan/phpstan-strict-rules",
