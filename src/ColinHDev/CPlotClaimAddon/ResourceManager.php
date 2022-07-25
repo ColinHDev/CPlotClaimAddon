@@ -9,6 +9,7 @@ use pocketmine\block\Block;
 use pocketmine\data\bedrock\BiomeIds;
 use pocketmine\utils\Config;
 use pocketmine\utils\SingletonTrait;
+use RuntimeException;
 
 class ResourceManager {
     use SingletonTrait;
@@ -59,13 +60,13 @@ class ResourceManager {
                 return $constant;
             }
         }
-        throw new \RuntimeException("Could not parse biome from string: " . $biomeIdentifier);
+        throw new RuntimeException("Could not parse biome from string: " . $biomeIdentifier);
     }
 
     private function parseBlockFromString(string $blockIdentifier) : Block {
         $block = ParseUtils::parseBlockFromString($blockIdentifier);
         if ($block === null) {
-            throw new \RuntimeException("Could not parse block from string: " . $blockIdentifier);
+            throw new RuntimeException("Could not parse block from string: " . $blockIdentifier);
         }
         return $block;
     }

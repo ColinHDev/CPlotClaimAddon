@@ -9,6 +9,7 @@ use ColinHDev\CPlot\event\PlotClaimAsyncEvent;
 use ColinHDev\CPlot\event\PlotClearedAsyncEvent;
 use ColinHDev\CPlot\event\PlotMergedAsyncEvent;
 use ColinHDev\CPlotClaimAddon\ResourceManager;
+use Generator;
 use pocketmine\event\Listener;
 use SOFe\AwaitGenerator\Await;
 
@@ -45,7 +46,7 @@ class PlotEventListener implements Listener {
     }
 
     private function onPlotEvent(PlotAsyncEvent $event) : void {
-        Await::f2c(static function() use($event) : \Generator {
+        Await::f2c(static function() use($event) : Generator {
             $plot = $event->getPlot();
             $worldName = $plot->getWorldName();
             $worldSettings = $plot->getWorldSettings();
