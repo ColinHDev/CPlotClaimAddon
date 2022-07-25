@@ -26,6 +26,10 @@ class PlotEventListener implements Listener {
      * @priority MONITOR
      */
     public function onPlotCleared(PlotClearedAsyncEvent $event) : void {
+        if (!$event->getPlot()->hasPlotOwner()) {
+            $event->continue();
+            return;
+        }
         $this->onPlotEvent($event);
     }
 
@@ -33,6 +37,10 @@ class PlotEventListener implements Listener {
      * @priority MONITOR
      */
     public function onPlotMerged(PlotMergedAsyncEvent $event) : void {
+        if (!$event->getPlot()->hasPlotOwner()) {
+            $event->continue();
+            return;
+        }
         $this->onPlotEvent($event);
     }
 
