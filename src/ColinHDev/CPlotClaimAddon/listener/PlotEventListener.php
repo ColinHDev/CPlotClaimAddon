@@ -52,26 +52,28 @@ class PlotEventListener implements Listener {
             $worldSettings = $plot->getWorldSettings();
             $resourceManager = ResourceManager::getInstance();
 
+			$gens = [];
             $biomeID = $resourceManager->getBiomeIDForWorld($worldName);
             if ($biomeID !== $worldSettings->getBiomeID()) {
-                yield from Await::promise(
+                $gens[] = Await::promise(
                     static fn($resolve) => $plot->setBiome($biomeID, $resolve, $resolve)
                 );
             }
 
             $borderBlock = $resourceManager->getBorderBlockForWorld($worldName);
             if (!$borderBlock->isSameState($worldSettings->getBorderBlock())) {
-                yield from Await::promise(
+                $gens[] = Await::promise(
                     static fn($resolve) => $plot->setBorderBlock($borderBlock, $resolve, $resolve)
                 );
             }
 
             $wallBlock = $resourceManager->getWallBlockForWorld($worldName);
             if (!$wallBlock->isSameState($worldSettings->getRoadBlock())) {
-                yield from Await::promise(
+                $gens[] = Await::promise(
                     static fn($resolve) => $plot->setWallBlock($wallBlock, $resolve, $resolve)
                 );
             }
+			yield from Await::all($gens);
 
             $event->continue();
         });
