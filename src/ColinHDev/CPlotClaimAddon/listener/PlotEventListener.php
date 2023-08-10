@@ -28,7 +28,6 @@ class PlotEventListener implements Listener {
      */
     public function onPlotCleared(PlotClearedAsyncEvent $event) : void {
         if (!$event->getPlot()->hasPlotOwner()) {
-            $event->continue();
             return;
         }
         $this->onPlotEvent($event);
@@ -39,7 +38,6 @@ class PlotEventListener implements Listener {
      */
     public function onPlotMerged(PlotMergedAsyncEvent $event) : void {
         if (!$event->getPlot()->hasPlotOwner()) {
-            $event->continue();
             return;
         }
         $this->onPlotEvent($event);
@@ -52,6 +50,7 @@ class PlotEventListener implements Listener {
             $worldSettings = $plot->getWorldSettings();
             $resourceManager = ResourceManager::getInstance();
 
+			$event->block();
             $biomeID = $resourceManager->getBiomeIDForWorld($worldName);
             if ($biomeID !== $worldSettings->getBiomeID()) {
                 yield from Await::promise(
@@ -73,7 +72,7 @@ class PlotEventListener implements Listener {
                 );
             }
 
-            $event->continue();
+            $event->release();
         });
     }
 }
