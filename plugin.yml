@@ -3,7 +3,7 @@ main: ColinHDev\CPlotClaimAddon\CPlotClaimAddon
 version: "1.0.2"
 description: "CPlot addon for performing certain actions once a plot is claimed"
 
-api: 4.0.0
+api: 5.0.0
 depend:
 - CPlot
 

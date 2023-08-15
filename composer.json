@@ -1,10 +1,11 @@
 {
 	"name": "colinhdev/cplotclaimaddon",
+	"prefer-stable": true,
+	"minimum-stability": "dev",
 	"require": {
-		"pocketmine/pocketmine-mp": "4.0.0",
+		"pocketmine/pocketmine-mp": "^5.0.0",
 		"colinhdev/cplot": "dev-development",
-		"sof3/await-generator": "^3.4.1",
-		"sof3/await-std": "@dev"
+		"sof3/await-generator": "^3.4.1"
 	},
 	"require-dev": {
 		"phpstan/phpstan": "^1.6.7",
@@ -27,6 +28,11 @@
 					"reference": "main"
 				}
 			}
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"phpstan/extension-installer": true
 		}
 	}
 }
